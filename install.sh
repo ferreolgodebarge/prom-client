@@ -9,7 +9,6 @@ pkill prometheus
 pkill grafana
 pkill python
 
-pkill prometheus
 # Install Prometheus binaries
 wget https://github.com/prometheus/prometheus/releases/download/v2.6.0/prometheus-2.6.0.linux-amd64.tar.gz -O prometheus.tar.gz
 tar -xvf prometheus.tar.gz
