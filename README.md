@@ -2,7 +2,7 @@
 
 This repository deploys a prometheus client python server, a prometheus server targetting the client server, and grafana.
 It runs on Linux distributions.
-
+You will need python3 set in `/usr/bin` folder.
 
 ## Steps
 
@@ -17,12 +17,7 @@ git clone https://github.com/ferreolgodebarge/prom-client.git
 cd prom-client
 ```
 
-3. Source the python virtual environment
-```
-source venv/bin/activate
-```
-
-4. Execute install.sh
+3. Execute install.sh
 ```
 ./install.sh
 ```
