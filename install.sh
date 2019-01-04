@@ -28,6 +28,7 @@ cp conf/defaults.ini $GRAF_HOME/conf/defaults.ini
 
 
 # Run prometheus client
+pip install prometheus_client
 python client.py &>/dev/null &
 
 # Run prometheus
