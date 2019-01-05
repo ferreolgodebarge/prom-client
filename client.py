@@ -14,16 +14,13 @@ def request_google():
     response = requests.get(url)
     duration = time.time() - time0
     status_code = response.status_code
-    res = {'status_code': status_code, 'duration': duration}
     REQUEST_TIME.set(duration)
-    print(res)
     if status_code == 200:
         COUNTER.labels(status='OK').inc()
         GAUGE.labels(status='OK').set(1)
     else:
         COUNTER.labels(status='KO').inc()
         GAUGE.labels(status='KO').set(0)
-    return res
 
 if __name__ == '__main__':
     # Start server
